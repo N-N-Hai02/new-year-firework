@@ -1,0 +1,152 @@
+/* Rainbow Text Animation by */
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+#demo {
+    text-transform: uppercase;
+    font-family: Lato;
+    font-size: 100%;
+    color: black;
+    margin: 0;
+}
+
+#demo span {
+    display: inline-block
+}
+
+.animated {
+    animation: customRainbow 4s infinite;
+    transition-timing-function: linear;
+    /* border-top: 2px solid #fff; */
+    border-bottom: 2px solid #fff;
+}
+
+@keyframes customRainbow {
+    /* Level - 1 */
+    /* 0% {
+        text-shadow: 0px 0px 5px rgb(27, 68, 248)
+    }
+
+    14% {
+        text-shadow: 0px 0px 5px rgba(250, 100, 40, 0.99);
+    }
+
+    28% {
+        text-shadow: 0px 0px 5px rgb(255, 255, 61);
+        -webkit-transform: translatey(-25px)
+    }
+
+    43% {
+        text-shadow: 0px 0px 5px #fff;
+    }
+
+    57% {
+        text-shadow: 0px 0px 5px rgb(27, 27, 250);
+    }
+
+    71% {
+        text-shadow: 0px 0px 5px rgb(172, 63, 250);
+    }
+
+    85% {
+        text-shadow: 0px 0px 5px rgb(253, 4, 253);
+    }
+
+    100% {
+        text-shadow: 0px 0px 5px rgba(69, 252, 24, 0.993);
+    } */
+
+    /* Level - 2 */
+
+    0% {
+        text-shadow: 0px 12px 5px rgb(27, 68, 248)
+    }
+
+    14% {
+        text-shadow: 0px 12px 5px rgba(250, 100, 40, 0.99);
+    }
+
+    28% {
+        text-shadow: 0px 12px 5px rgb(255, 255, 61);
+        -webkit-transform: translatey(-25px)
+    }
+
+    43% {
+        text-shadow: 0px 12px 5px #fff;
+    }
+
+    57% {
+        text-shadow: 0px 12px 5px rgb(27, 27, 250);
+    }
+
+    71% {
+        text-shadow: 0px 12px 5px rgb(172, 63, 250);
+    }
+
+    85% {
+        text-shadow: 0px 12px 5px rgb(253, 4, 253);
+    }
+
+    100% {
+        text-shadow: 0px 12px 6px rgba(69, 252, 24, 0.993);
+    }
+
+    /* Level - 3 */
+
+    /* 0% {
+        text-shadow: 0px 1px 5px #fff
+    }
+
+    14% {
+        text-shadow: 0px 5px 5px rgb(243, 247, 4);
+    }
+
+    28% {
+        text-shadow: 0px 5px 5px rgb(243, 247, 4);
+        -webkit-transform: translatey(-25px)
+    }
+
+    43% {
+        text-shadow: 0px 5px 5px #0efa21;
+    }
+
+    57% {
+        text-shadow: 0px 1px 5px rgb(243, 247, 4);
+    }
+
+    71% {
+        text-shadow: 0px 5px 5px rgb(5, 204, 15);
+    }
+
+    85% {
+        text-shadow: 0px 5px 5px rgb(5, 155, 25);
+    }
+
+    100% {
+        text-shadow: 0px 5px 6px rgb(243, 247, 4);
+    } */
+}
+
+#outer-div {
+    text-align: center;
+    width: 100%;
+    margin: 0
+}
+
+/* Animated Responsive Form input */
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+@keyframes slide-up2 {
+    0% {
+        transform: translateY(.5em);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    width: fit-content;
+}
+
+body {
+    width: fit-content;
+}
+
+#container-firework {
+    font-size: 3.5rem;
+    color: white;
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Montserrat',
+        sans-serif;
+    text-transform: uppercase;
+    width: 100%;
+}
+#container-firework > p {
+    text-shadow: 0px 12px 6px rgba(250, 100, 40, 0.99);
+}
+
+/* style text animation 1 */
+canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#canvas {
+    width: 100%;
+}
+
+svg {
+    font-family: 'Russo One', sans-serif;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 50%;
+    top: 125%;
+    transform: translate(-50%, -50%);
+}
+
+svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #365fa0;
+    font-size: 65px;
+}
+
+@keyframes stroke {
+    0% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(241, 203, 30);
+        stroke-dashoffset: 25%;
+        stroke-dasharray: 0 50%;
+        stroke-width: 2;
+    }
+
+    70% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(241, 203, 30);
+    }
+
+    80% {
+        fill: rgba(72, 138, 20, 0);
+        stroke: rgb(241, 203, 30);
+        stroke-width: 3;
+    }
+
+    100% {
+        fill: rgb(204, 180, 72);
+        stroke: rgba(54, 95, 160, 0);
+        stroke-dashoffset: -25%;
+        stroke-dasharray: 50% 0;
+        stroke-width: 0;
+    }
+}
+
+/* @media (max-width: 1350px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 860px) {
+    #demo {
+        font-size: 40px;
+    }
+} */
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 40%;
+    }
+}
