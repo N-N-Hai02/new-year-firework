@@ -21,10 +21,10 @@ function onLoad() {
 
     window.requestAnimationFrame(updateWorld);
 
-    // setInterval(() => {
-    //     var aud = new Audio(audSrc);
-    //     aud.play();
-    // }, 1000)
+    setInterval(() => {
+        var aud = new Audio(audSrc);
+        aud.play();
+    }, 1000)
 }
 
 function resizeCanvas() {

@@ -9,25 +9,58 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="rainbow.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="timer.css">
     <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 </head>
 
 <body>
     <div id="container-firework">
         <div id="outer-div">
-            <p id="demo">Happy_New_Year_2024</p>
+            <p id="demo">Happy_New_Year</p>
+            <div>
+                <div class="content-wrapper">
+                    <h1 class="year" id="new-year">0000</h1>
+                    <div class="timer">
+                        <div class="timer-box">
+                            <div class="timer-box__count">
+                                <span id="days">0</span>
+                            </div>
+                            <div class="timer-box__text">Days</div>
+                        </div>
+                        <div class="timer-box">
+                            <div class="timer-box__count">
+                                <span id="hours">0</span>
+                            </div>
+                            <div class="timer-box__text">Hours</div>
+                        </div>
+                        <div class="timer-box">
+                            <div class="timer-box__count">
+                                <span id="minutes">0</span>
+                            </div>
+                            <div class="timer-box__text">Minutes</div>
+                        </div>
+                        <div class="timer-box">
+                            <div class="timer-box__count">
+                                <span id="seconds">0</span>
+                            </div>
+                            <div class="timer-box__text">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <svg viewBox="0 0 1320 300">
             <text x="50%" y="50%" dy=".35em" text-anchor="middle">
-                Vạn Sự như ý - Thành công
+                Chúc Vạn Sự như ý - Thành công
             </text>
         </svg>
-        <p>Nguyễn Ngọc Hải!</p>
+        <p></p>
+        <!-- <p>I'm Nguyễn Ngọc Hải!</p> -->
     </div>
     <div class="container-canvas">
         <canvas id="canvas"></canvas>
     </div>
-
+    <script src="timer.js"></script>
     <script src="rainbow.js"></script>
     <script src="plugin.js"></script>
     <script src="main.js"></script>
